@@ -16,7 +16,8 @@ body {
     position: relative;
     padding-top: 10px;
     margin-top: 10px;
-    border-top: 1px solid #b2b2b2;
+    xborder-top: 1px solid #b2b2b2;
+    border-top: 1px dashed #b2b2b2;
     vertical-align: top;
 }
 
@@ -50,11 +51,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     float: left;
-    margin-left: 2px;
+    xmargin-left: 2px;
+    margin-right: 2px;
     font-family: verdana;
     font-size: 12px;
     user-select: none;
-    cursor: arrow;
+    cursor: pointer;
 }
 
 .icon.incognito {
@@ -77,26 +79,28 @@ body {
 
 .tab {
     float: left;
-    margin-left: 2px;
+    xmargin-left: 2px;
+    margin-right: 2px;
     margin-bottom: 2px;
     background-image: url(../images/generic.png);
     position: relative;
+    box-shadow: 2px 2px 1px rgba(80%, 80%, 90%, 0.5);
 }
 
 .tab.full {
-    width: 340px;
+    width: 100%;
     background-position: 2px center;
 }
 
 .tab.full > .tabtitle {
-    width: 310px;
+    width: 99%;
     height: 100%;
     white-space: nowrap;
     overflow: hidden;
 }
 
 .tab:first-child, .newliner + .icon {
-    margin-left: 0px;
+    xmargin-left: 0px;
 }
 
 .windowaction {
@@ -213,6 +217,7 @@ input {
 }
 
 .window.searchbox {
+    border-top: 1px solid #b2b2b2;
     background-color: white;
     padding: 10px;
     position: fixed;
