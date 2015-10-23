@@ -149,6 +149,25 @@ body {
     background-image: url(../images/filter.png);
 }
 
+.close {
+    background: url(../images/close-button-inactive.png) white;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0px;
+    right: 2px;
+    display: none;
+}
+
+.close:hover {
+    background-image: url(../images/close-button-active.png);
+}
+
+.fade-out {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
 .tab.left > .limiter, .tab.right > .limiter {
     width: 2px;
     height: 20px;
