@@ -68,6 +68,16 @@ body {
     padding: 0px;
 }
 
+.tab {
+    float: left;
+    xmargin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background-image: url(../images/generic.png);
+    position: relative;
+    box-shadow: 2px 2px 1px rgba(80%, 80%, 90%, 0.5);
+}
+
 .tab.selected {
     border: 2px solid #3B5686;
     padding: 0px;
@@ -77,14 +87,8 @@ body {
     display: none;
 }
 
-.tab {
-    float: left;
-    xmargin-left: 2px;
-    margin-right: 2px;
-    margin-bottom: 2px;
-    background-image: url(../images/generic.png);
-    position: relative;
-    box-shadow: 2px 2px 1px rgba(80%, 80%, 90%, 0.5);
+.tab.marked {
+    background-color: #EEFFFF;
 }
 
 .tab.full {
@@ -103,13 +107,13 @@ body {
     xmargin-left: 0px;
 }
 
-.windowaction {
+.window-action {
     float: right;
     margin-right: 2px;
     margin-left: 0px;
 }
 
-.windowaction + .enabled {
+.window-action + .enabled {
     background-color: #DDEEEE;
 }
 
@@ -215,7 +219,7 @@ body {
     -webkit-user-select: none;
 }
 
-.newliner {
+.newline {
     clear: both;
     margin-right: -2px;
 }
@@ -235,7 +239,7 @@ input {
     z-index: -1;
 }
 
-.window.searchbox {
+.window.search-box {
     border-top: 1px solid #b2b2b2;
     background-color: white;
     padding: 10px;
@@ -244,7 +248,8 @@ input {
     left: 0px;
 }
 
-.infobox {
+.info-box {
+    background-color: white;
     position: fixed;
     font-family: Arial;
     font-weight: bold;
