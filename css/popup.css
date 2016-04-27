@@ -63,7 +63,7 @@ body {
     border: 1px solid #ff0000;
 }
 
-.icon:hover {
+.icon.hover {
     border-width: 2px;
     padding: 0px;
 }
@@ -96,7 +96,7 @@ body {
     background-position: 2px center;
 }
 
-.tab.full > .tabtitle {
+.tab.full > .tab-title {
     width: 99%;
     height: 100%;
     white-space: nowrap;
